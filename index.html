@@ -41,14 +41,50 @@
 				</div>
 			</form>
 			<div class="weather-status text-white text-center">
+				<h4><span id="cityName"></span> - <span id="country"></span></h4>
+				<h1 style="font-size: 100px;">
+					<span id="temperature">38.06</span>&deg;C
+				</h1>
 				<img
 					src="https://openweathermap.org/img/wn/02d@2x.png"
 					alt=""
 					id="weather-icon"
+					style="background-color: gray;"
 				/>
-				<h1 id="cityName">Dhaka</h1>
-				<h3><span id="temperature">38.06</span>&deg;C</h3>
-				<h1 class="lead" id="weather-condition">Clouds</h1>
+				<h1 class="lead" id="weather-condition"></h1>
+
+				<table class="table table-dark text-white w-50 mx-auto">
+					<tbody>
+						<tr>
+							<th>Feels Like</th>
+							<td><span id="feels_like"></span> &deg;C</td>
+						</tr>
+						<tr>
+							<th>Max Temperature</th>
+							<td><span id="max_temp"></span> &deg;C</td>
+						</tr>
+						<tr>
+							<th>Min Temperature</th>
+							<td><span id="min_temp"></span> &deg;C</td>
+						</tr>
+						<tr>
+							<th>Humidity</th>
+							<td><span id="humidity"></span>%</td>
+						</tr>
+						<tr>
+							<th>Wind Speed</th>
+							<td><span id="wind_speed"></span> km/hr</td>
+						</tr>
+						<tr>
+							<th>Sunrise</th>
+							<td id="sunrise"></td>
+						</tr>
+						<tr>
+							<th>Sunset</th>
+							<td id="sunset"></td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 		</div>
 
